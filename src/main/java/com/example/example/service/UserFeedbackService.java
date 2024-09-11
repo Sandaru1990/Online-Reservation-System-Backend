@@ -28,4 +28,9 @@ public class UserFeedbackService {
     public List<UserFeedback> getAllFeedback(){
        return userFeedbackRepository.findAll();
     }
+    
+    public void deleteFeedbackById(int feedbackId) {
+        userFeedbackRepository.deleteById(feedbackId);
+    }
 }
+
